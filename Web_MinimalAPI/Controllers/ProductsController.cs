@@ -36,12 +36,53 @@ namespace Web_MinimalAPI.Controllers
         //}
 
 
+        //working code: for GetAllProducts products V1
         //Approach 3-> Asynchronous ActionResult
+        //[HttpGet]
+        //public async Task<ActionResult> GetAllProducts()
+        //{
+        //    return Ok(await _shopContext.Products.ToArrayAsync());
+        //}
+
+
+        //commented the above code because adding pagination in this method
+        //adding pagination - v2
+        //commenting this code-> because another method added as v3 for Filtering data
+        //[HttpGet]
+        //public async Task<ActionResult> GetAllProducts([FromQuery]QueryParameters queryParameters)
+        //{
+        //    IQueryable<Product> products = _shopContext.Products;   //iqueryable used, so we can query on the products for the pagination
+
+        //    products = products.Skip(queryParameters.Size * (queryParameters.Page - 1)).Take(queryParameters.Size);
+
+        //    return Ok(await products.ToArrayAsync());
+        //}
+
+
+        //this method is modified further more to add filtering on data
         [HttpGet]
-        public async Task<ActionResult> GetAllProducts()
+        public async Task<ActionResult> GetAllProducts([FromQuery] ProductQueryParameter queryParameters)
         {
-            return Ok(await _shopContext.Products.ToArrayAsync());
+            IQueryable<Product> products = _shopContext.Products;   //iqueryable used, so we can query on the products for the pagination
+
+            //code for filtering data
+            //this code through out products whose price is lower than minPrice
+            if (queryParameters.MinPrice != null)
+            {
+                products = products.Where(p => p.Price >= queryParameters.MinPrice.Value);  
+            }
+
+            //for max price
+            if(queryParameters.MaxPrice != null)
+            {
+                products = products.Where(p => p.Price <= queryParameters.MaxPrice.Value);
+            }
+
+            products = products.Skip(queryParameters.Size * (queryParameters.Page - 1)).Take(queryParameters.Size);
+
+            return Ok(await products.ToArrayAsync());
         }
+
 
         [HttpGet("{id}")]
         public async Task<ActionResult> GetProduct(int id)

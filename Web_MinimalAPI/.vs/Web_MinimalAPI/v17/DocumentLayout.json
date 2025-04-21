@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\SSINGH47\\source\\repos\\Web-MinimalAPI\\Web_MinimalAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6E919653-1CD0-4B1C-AB00-C85F17E64EE8}|Web_MinimalAPI.csproj|c:\\users\\ssingh47\\source\\repos\\web-minimalapi\\web_minimalapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E919653-1CD0-4B1C-AB00-C85F17E64EE8}|Web_MinimalAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6E919653-1CD0-4B1C-AB00-C85F17E64EE8}|Web_MinimalAPI.csproj|c:\\users\\ssingh47\\source\\repos\\web-minimalapi\\web_minimalapi\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E919653-1CD0-4B1C-AB00-C85F17E64EE8}|Web_MinimalAPI.csproj|solutionrelative:controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E919653-1CD0-4B1C-AB00-C85F17E64EE8}|Web_MinimalAPI.csproj|c:\\users\\ssingh47\\source\\repos\\web-minimalapi\\web_minimalapi\\models\\productqueryparameter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E919653-1CD0-4B1C-AB00-C85F17E64EE8}|Web_MinimalAPI.csproj|solutionrelative:models\\productqueryparameter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6E919653-1CD0-4B1C-AB00-C85F17E64EE8}|Web_MinimalAPI.csproj|c:\\users\\ssingh47\\source\\repos\\web-minimalapi\\web_minimalapi\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6E919653-1CD0-4B1C-AB00-C85F17E64EE8}|Web_MinimalAPI.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E919653-1CD0-4B1C-AB00-C85F17E64EE8}|Web_MinimalAPI.csproj|c:\\users\\ssingh47\\source\\repos\\web-minimalapi\\web_minimalapi\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E919653-1CD0-4B1C-AB00-C85F17E64EE8}|Web_MinimalAPI.csproj|solutionrelative:controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6E919653-1CD0-4B1C-AB00-C85F17E64EE8}|Web_MinimalAPI.csproj|c:\\users\\ssingh47\\source\\repos\\web-minimalapi\\web_minimalapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E919653-1CD0-4B1C-AB00-C85F17E64EE8}|Web_MinimalAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -55,38 +59,51 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ProductQueryParameter.cs",
+              "DocumentMoniker": "C:\\Users\\SSINGH47\\source\\repos\\Web-MinimalAPI\\Web_MinimalAPI\\Models\\ProductQueryParameter.cs",
+              "RelativeDocumentMoniker": "Models\\ProductQueryParameter.cs",
+              "ToolTip": "C:\\Users\\SSINGH47\\source\\repos\\Web-MinimalAPI\\Web_MinimalAPI\\Models\\ProductQueryParameter.cs",
+              "RelativeToolTip": "Models\\ProductQueryParameter.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T11:10:44.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Users\\SSINGH47\\source\\repos\\Web-MinimalAPI\\Web_MinimalAPI\\Models\\Product.cs",
               "RelativeDocumentMoniker": "Models\\Product.cs",
               "ToolTip": "C:\\Users\\SSINGH47\\source\\repos\\Web-MinimalAPI\\Web_MinimalAPI\\Models\\Product.cs",
               "RelativeToolTip": "Models\\Product.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAASAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-19T14:35:39.373Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\SSINGH47\\source\\repos\\Web-MinimalAPI\\Web_MinimalAPI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\SSINGH47\\source\\repos\\Web-MinimalAPI\\Web_MinimalAPI\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAHsAAAAAAAAAAAAAAJAAAAADAAAA",
+              "ViewState": "AQIAAHsAAAAAAAAAAAAAAI4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-19T13:57:26.604Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "C:\\Users\\SSINGH47\\source\\repos\\Web-MinimalAPI\\Web_MinimalAPI\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProductsController.cs",
               "ToolTip": "C:\\Users\\SSINGH47\\source\\repos\\Web-MinimalAPI\\Web_MinimalAPI\\Controllers\\ProductsController.cs",
               "RelativeToolTip": "Controllers\\ProductsController.cs",
-              "ViewState": "AQIAAGkAAAAAAAAAAADwv40AAAAgAAAA",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAAAE0AAABaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-19T13:36:11.854Z",
               "EditorCaption": ""
