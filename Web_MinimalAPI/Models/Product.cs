@@ -21,6 +21,6 @@ namespace Web_MinimalAPI.Models
 
         //virtual -> want to point to the Category from the Product.
         [JsonIgnore]
-        public virtual Category Category { get; set; }
+        public virtual Category? Category { get; set; }
     }
 }

@@ -27,6 +27,7 @@ namespace Web_MinimalAPI.Controllers
         //    return _shopContext.Products.ToArray();
         //}
 
+        //--------------------------------------------------------------------------------------------------
 
         //Approach 2->ActionResult
         //[HttpGet]
@@ -34,7 +35,7 @@ namespace Web_MinimalAPI.Controllers
         //{
         //    return Ok(_shopContext.Products.ToArray());
         //}
-
+        //--------------------------------------------------------------------------------------------------
 
         //working code: for GetAllProducts products V1
         //Approach 3-> Asynchronous ActionResult
@@ -43,7 +44,7 @@ namespace Web_MinimalAPI.Controllers
         //{
         //    return Ok(await _shopContext.Products.ToArrayAsync());
         //}
-
+        //--------------------------------------------------------------------------------------------------
 
         //commented the above code because adding pagination in this method
         //adding pagination - v2
@@ -58,8 +59,10 @@ namespace Web_MinimalAPI.Controllers
         //    return Ok(await products.ToArrayAsync());
         //}
 
+        //--------------------------------------------------------------------------------------------------
 
-        //this method is modified further more to add filtering on data
+
+        //this method is modified further more to add filtering, searching, sorting on data
         [HttpGet]
         public async Task<ActionResult> GetAllProducts([FromQuery] ProductQueryParameter queryParameters)
         {
@@ -71,18 +74,48 @@ namespace Web_MinimalAPI.Controllers
             {
                 products = products.Where(p => p.Price >= queryParameters.MinPrice.Value);  
             }
-
             //for max price
             if(queryParameters.MaxPrice != null)
             {
                 products = products.Where(p => p.Price <= queryParameters.MaxPrice.Value);
             }
 
+
+            //code for Searching Item
+            //for seraching both sku/name in one search
+            if (!string.IsNullOrEmpty(queryParameters.SearchTerm))
+            {
+                products=products.Where(p=>p.Sku.ToLower()==queryParameters.SearchTerm.ToLower() || p.Name.ToLower()==queryParameters.SearchTerm.ToLower())
+            }
+            //for sku
+            if (!string.IsNullOrEmpty(queryParameters.Sku))
+            {
+                products = products.Where(p => p.Sku == queryParameters.Sku);
+            }
+            //for name
+            if (!string.IsNullOrEmpty(queryParameters.Name))
+            {
+                products = products.Where(p => p.Name.ToLower().Contains(queryParameters.Name.ToLower()));
+            }
+
+
+            //code for sorting items
+            if (!string.IsNullOrEmpty(queryParameters.SortBy))
+            {
+                if (typeof(Product).GetProperty(queryParameters.SortBy)!=null)
+                {
+                    products = products.OrderByCustom(queryParameters.SortBy, queryParameters.SortOrder);
+                }
+            }
+
+
             products = products.Skip(queryParameters.Size * (queryParameters.Page - 1)).Take(queryParameters.Size);
 
             return Ok(await products.ToArrayAsync());
         }
 
+        
+        //--------------------------------------------------------------------------------------------------
 
         [HttpGet("{id}")]
         public async Task<ActionResult> GetProduct(int id)
@@ -95,12 +128,16 @@ namespace Web_MinimalAPI.Controllers
             return Ok(product);
         }
 
+        //--------------------------------------------------------------------------------------------------
+
         //method for checking Available Products
         [HttpGet("available")]
         public async Task<ActionResult<IEnumerable<Product>>> GetAvailableProducts()
         {
             return await _shopContext.Products.Where(p => p.IsAvailable).ToArrayAsync();
         }
+
+        //--------------------------------------------------------------------------------------------------
 
 
         //create the product
@@ -117,6 +154,9 @@ namespace Web_MinimalAPI.Controllers
 
             return CreatedAtAction(nameof(GetProduct), new { id = product.Id }, product);
         }
+
+        //--------------------------------------------------------------------------------------------------
+
 
         //Update the Product
         [HttpPut("{id}")]
@@ -145,6 +185,8 @@ namespace Web_MinimalAPI.Controllers
             return NoContent();
         }
 
+        //--------------------------------------------------------------------------------------------------
+
         //delete an item from product
         [HttpDelete("{id}")]
         public async Task<ActionResult> DeleteProduct(int id)
@@ -160,6 +202,8 @@ namespace Web_MinimalAPI.Controllers
 
             return Ok(product);
         }
+
+        //--------------------------------------------------------------------------------------------------
 
         //delete multiple products
         [HttpDelete("Delete")]
