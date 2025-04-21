@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\SSINGH47\\source\\repos\\Web-MinimalAPI\\Web_MinimalAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6E919653-1CD0-4B1C-AB00-C85F17E64EE8}|Web_MinimalAPI.csproj|c:\\users\\ssingh47\\source\\repos\\web-minimalapi\\web_minimalapi\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E919653-1CD0-4B1C-AB00-C85F17E64EE8}|Web_MinimalAPI.csproj|solutionrelative:controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E919653-1CD0-4B1C-AB00-C85F17E64EE8}|Web_MinimalAPI.csproj|c:\\users\\ssingh47\\source\\repos\\web-minimalapi\\web_minimalapi\\models\\productqueryparameter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E919653-1CD0-4B1C-AB00-C85F17E64EE8}|Web_MinimalAPI.csproj|solutionrelative:models\\productqueryparameter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E919653-1CD0-4B1C-AB00-C85F17E64EE8}|Web_MinimalAPI.csproj|c:\\users\\ssingh47\\source\\repos\\web-minimalapi\\web_minimalapi\\models\\queryparameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E919653-1CD0-4B1C-AB00-C85F17E64EE8}|Web_MinimalAPI.csproj|solutionrelative:models\\queryparameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E919653-1CD0-4B1C-AB00-C85F17E64EE8}|Web_MinimalAPI.csproj|c:\\users\\ssingh47\\source\\repos\\web-minimalapi\\web_minimalapi\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E919653-1CD0-4B1C-AB00-C85F17E64EE8}|Web_MinimalAPI.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6E919653-1CD0-4B1C-AB00-C85F17E64EE8}|Web_MinimalAPI.csproj|c:\\users\\ssingh47\\source\\repos\\web-minimalapi\\web_minimalapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6E919653-1CD0-4B1C-AB00-C85F17E64EE8}|Web_MinimalAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E919653-1CD0-4B1C-AB00-C85F17E64EE8}|Web_MinimalAPI.csproj|c:\\users\\ssingh47\\source\\repos\\web-minimalapi\\web_minimalapi\\controllers\\productsv2controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E919653-1CD0-4B1C-AB00-C85F17E64EE8}|Web_MinimalAPI.csproj|solutionrelative:controllers\\productsv2controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E919653-1CD0-4B1C-AB00-C85F17E64EE8}|Web_MinimalAPI.csproj|c:\\users\\ssingh47\\source\\repos\\web-minimalapi\\web_minimalapi\\controllers\\productsv1controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E919653-1CD0-4B1C-AB00-C85F17E64EE8}|Web_MinimalAPI.csproj|solutionrelative:controllers\\productsv1controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,66 +54,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "QueryParameters.cs",
-              "DocumentMoniker": "C:\\Users\\SSINGH47\\source\\repos\\Web-MinimalAPI\\Web_MinimalAPI\\Models\\QueryParameters.cs",
-              "RelativeDocumentMoniker": "Models\\QueryParameters.cs",
-              "ToolTip": "C:\\Users\\SSINGH47\\source\\repos\\Web-MinimalAPI\\Web_MinimalAPI\\Models\\QueryParameters.cs",
-              "RelativeToolTip": "Models\\QueryParameters.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T11:31:59.598Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ProductQueryParameter.cs",
-              "DocumentMoniker": "C:\\Users\\SSINGH47\\source\\repos\\Web-MinimalAPI\\Web_MinimalAPI\\Models\\ProductQueryParameter.cs",
-              "RelativeDocumentMoniker": "Models\\ProductQueryParameter.cs",
-              "ToolTip": "C:\\Users\\SSINGH47\\source\\repos\\Web-MinimalAPI\\Web_MinimalAPI\\Models\\ProductQueryParameter.cs",
-              "RelativeToolTip": "Models\\ProductQueryParameter.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAxAAAA",
+              "Title": "ProductsV2Controller.cs",
+              "DocumentMoniker": "C:\\Users\\SSINGH47\\source\\repos\\Web-MinimalAPI\\Web_MinimalAPI\\Controllers\\ProductsV2Controller.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductsV2Controller.cs",
+              "ToolTip": "C:\\Users\\SSINGH47\\source\\repos\\Web-MinimalAPI\\Web_MinimalAPI\\Controllers\\ProductsV2Controller.cs",
+              "RelativeToolTip": "Controllers\\ProductsV2Controller.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T11:10:44.753Z",
+              "WhenOpened": "2025-04-21T12:41:46.478Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\SSINGH47\\source\\repos\\Web-MinimalAPI\\Web_MinimalAPI\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "Models\\Product.cs",
-              "ToolTip": "C:\\Users\\SSINGH47\\source\\repos\\Web-MinimalAPI\\Web_MinimalAPI\\Models\\Product.cs",
-              "RelativeToolTip": "Models\\Product.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAgAAAA",
+              "DocumentIndex": 2,
+              "Title": "ProductsV1Controller.cs",
+              "DocumentMoniker": "C:\\Users\\SSINGH47\\source\\repos\\Web-MinimalAPI\\Web_MinimalAPI\\Controllers\\ProductsV1Controller.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductsV1Controller.cs",
+              "ToolTip": "C:\\Users\\SSINGH47\\source\\repos\\Web-MinimalAPI\\Web_MinimalAPI\\Controllers\\ProductsV1Controller.cs",
+              "RelativeToolTip": "Controllers\\ProductsV1Controller.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T14:35:39.373Z",
+              "WhenOpened": "2025-04-21T11:59:21.909Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\SSINGH47\\source\\repos\\Web-MinimalAPI\\Web_MinimalAPI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\SSINGH47\\source\\repos\\Web-MinimalAPI\\Web_MinimalAPI\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAHsAAAAAAAAAAAAAAI4AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T13:57:26.604Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProductsController.cs",
-              "DocumentMoniker": "C:\\Users\\SSINGH47\\source\\repos\\Web-MinimalAPI\\Web_MinimalAPI\\Controllers\\ProductsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ProductsController.cs",
-              "ToolTip": "C:\\Users\\SSINGH47\\source\\repos\\Web-MinimalAPI\\Web_MinimalAPI\\Controllers\\ProductsController.cs",
-              "RelativeToolTip": "Controllers\\ProductsController.cs",
-              "ViewState": "AQIAAEgAAAAAAAAAAAAAAFgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T13:36:11.854Z",
+              "WhenOpened": "2025-04-21T11:57:35.243Z",
               "EditorCaption": ""
             }
           ]

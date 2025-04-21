@@ -1,17 +1,31 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Asp.Versioning;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Web_MinimalAPI.Models;
 
 namespace Web_MinimalAPI.Controllers
 {
-    [Route("api/[controller]")]
+
+    /// <summary>
+    /// API Version 1
+    /// </summary>
+
+    [ApiVersion("1.0")]
+    //[Route("api/[controller]")]
+
+    //url versioning
+    [Route("api/v1/[controller]")]
+
+    //header versioning
+    //[Route("products")]
+
     [ApiController]
-    public class ProductsController : ControllerBase
+    public class ProductsV1Controller : ControllerBase
     {
         private readonly ShopContext _shopContext;
 
-        public ProductsController(ShopContext shopContext)
+        public ProductsV1Controller(ShopContext shopContext)
         {
             _shopContext = shopContext;
 
@@ -85,7 +99,7 @@ namespace Web_MinimalAPI.Controllers
             //for seraching both sku/name in one search
             if (!string.IsNullOrEmpty(queryParameters.SearchTerm))
             {
-                products=products.Where(p=>p.Sku.ToLower()==queryParameters.SearchTerm.ToLower() || p.Name.ToLower()==queryParameters.SearchTerm.ToLower())
+                products = products.Where(p => p.Sku.ToLower() == queryParameters.SearchTerm.ToLower() || p.Name.ToLower() == queryParameters.SearchTerm.ToLower());
             }
             //for sku
             if (!string.IsNullOrEmpty(queryParameters.Sku))
@@ -227,5 +241,5 @@ namespace Web_MinimalAPI.Controllers
             return Ok(products);
         }
 
-    }
+    }    
 }

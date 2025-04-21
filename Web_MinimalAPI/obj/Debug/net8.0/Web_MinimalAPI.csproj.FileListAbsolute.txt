@@ -43,3 +43,7 @@ C:\Users\SSINGH47\source\repos\Web-MinimalAPI\Web_MinimalAPI\bin\Debug\net8.0\Mi
 C:\Users\SSINGH47\source\repos\Web-MinimalAPI\Web_MinimalAPI\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 C:\Users\SSINGH47\source\repos\Web-MinimalAPI\Web_MinimalAPI\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
 C:\Users\SSINGH47\source\repos\Web-MinimalAPI\Web_MinimalAPI\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\SSINGH47\source\repos\Web-MinimalAPI\Web_MinimalAPI\bin\Debug\net8.0\Asp.Versioning.Abstractions.dll
+C:\Users\SSINGH47\source\repos\Web-MinimalAPI\Web_MinimalAPI\bin\Debug\net8.0\Asp.Versioning.Http.dll
+C:\Users\SSINGH47\source\repos\Web-MinimalAPI\Web_MinimalAPI\bin\Debug\net8.0\Asp.Versioning.Mvc.dll
+C:\Users\SSINGH47\source\repos\Web-MinimalAPI\Web_MinimalAPI\bin\Debug\net8.0\Asp.Versioning.Mvc.ApiExplorer.dll

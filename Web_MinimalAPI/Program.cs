@@ -1,3 +1,4 @@
+using Asp.Versioning;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Web_MinimalAPI.Models;
@@ -10,6 +11,23 @@ builder.Services.AddControllers().ConfigureApiBehaviorOptions(options =>
 {
     options.SuppressModelStateInvalidFilter= true;
 });
+
+//api versioning
+builder.Services.AddApiVersioning(options =>
+{
+    options.ReportApiVersions = true;
+    options.DefaultApiVersion = new Asp.Versioning.ApiVersion(1, 0);
+    options.AssumeDefaultVersionWhenUnspecified = true;
+
+    //version heder
+    //options.ApiVersionReader = new HeaderApiVersionReader("X-API-Version");
+
+    //querstring version header
+    options.ApiVersionReader = new QueryStringApiVersionReader("api-version");
+});
+
+//fixing the swagger
+
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

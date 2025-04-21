@@ -1,9 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "fFSmzfRlQsc=",
+  "dgSpecHash": "/UVrJO5f73s=",
   "success": true,
   "projectFilePath": "C:\\Users\\SSINGH47\\source\\repos\\Web-MinimalAPI\\Web_MinimalAPI\\Web_MinimalAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\SSINGH47\\.nuget\\packages\\asp.versioning.abstractions\\8.1.0\\asp.versioning.abstractions.8.1.0.nupkg.sha512",
+    "C:\\Users\\SSINGH47\\.nuget\\packages\\asp.versioning.http\\8.1.0\\asp.versioning.http.8.1.0.nupkg.sha512",
+    "C:\\Users\\SSINGH47\\.nuget\\packages\\asp.versioning.mvc\\8.1.0\\asp.versioning.mvc.8.1.0.nupkg.sha512",
+    "C:\\Users\\SSINGH47\\.nuget\\packages\\asp.versioning.mvc.apiexplorer\\8.1.0\\asp.versioning.mvc.apiexplorer.8.1.0.nupkg.sha512",
     "C:\\Users\\SSINGH47\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.4\\microsoft.entityframeworkcore.9.0.4.nupkg.sha512",
     "C:\\Users\\SSINGH47\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.4\\microsoft.entityframeworkcore.abstractions.9.0.4.nupkg.sha512",
     "C:\\Users\\SSINGH47\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\9.0.4\\microsoft.entityframeworkcore.analyzers.9.0.4.nupkg.sha512",
